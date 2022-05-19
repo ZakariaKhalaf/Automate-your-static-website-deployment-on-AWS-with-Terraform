@@ -6,7 +6,6 @@ phases:
                nodejs: 10
                commands:
                   - echo "Installing something"
-
   pre_build:
     commands:
        - echo "we are in the per build phase"
@@ -14,8 +13,6 @@ phases:
     commands:
       - echo "we are in the build phase"
       - echo "we are in run some tests"
-      
   post_build:
     commands:
-    
       - echo "we are in the post_build phase"
