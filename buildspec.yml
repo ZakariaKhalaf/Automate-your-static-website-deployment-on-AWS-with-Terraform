@@ -1,3 +1,7 @@
 version: 0.2
 
 
+artifacts:
+  files:
+    - '**/*'
+  name: my-automation-artifacts
