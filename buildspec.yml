@@ -4,4 +4,4 @@ version: 0.2
 artifacts:
   files:
     - '**/*'
-  name: my-automation-artifacts
+  name: my-static-website-automation-artifacts
