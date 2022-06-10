@@ -268,10 +268,8 @@ resource "aws_codepipeline" "codepipeline" {
             output_artifacts = ["SourceArtifact"]
 
             configuration = {
-                ConnectionArn    = aws_codestarconnections_connection.GitHub.arn
-                // my-account/my-repository
-                FullRepositoryId = "ZakariaKhalaf/automate-static-website"
-                //for example: FullRepositoryId = "johndoe/static-website"
+                ConnectionArn    = aws_codestarconnections_connection.GitHub.arn               
+                FullRepositoryId = "my-account/my-repository" //for example: FullRepositoryId = "johndoe/static-website"
                 BranchName       = "main"
             }
         }
